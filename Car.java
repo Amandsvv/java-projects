@@ -1,12 +1,18 @@
-public class Car{
-    static void print(int n){
-        if(n < 1) return;
-        print(n-1);
-        System.out.println(n);
-    }
+class CarBluePrint{
+    String car_model;
+    int no_tyres;
+    int door;
 
-    public static void main(String[] args){
-        System.out.println("Started");
-        print(5);
+    CarBluePrint(int no_tyres, int door){
+        this.no_tyres = no_tyres;
+        this.door = door;
+    }
+}
+public class Car
+{
+    public static void main(String[] args) {
+        CarBluePrint thar = new CarBluePrint(4,4);
+        System.out.println(thar.no_tyres);
+        System.out.println(thar.door);
     }
 }
